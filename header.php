@@ -24,6 +24,7 @@
     <div class="blog-masthead">
         <div class="container">
             <div class="site-name">
+                <?php get_template_part('logo'); ?>
                 <a href="<?php echo get_bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a>
             </div>
         </div>

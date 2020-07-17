@@ -82,25 +82,9 @@ body {
   color: #ffc700;
 }
 
-/*
- * Main column and sidebar layout
- */
-
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
-}
-
-/* Pagination */
-.pager {
-  margin-bottom: 60px;
-  text-align: left;
-}
-.pager > li > a {
-  width: 140px;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 30px;
 }
 
 /*

@@ -1,0 +1,126 @@
+/* - Orange: #CC4B00 (Links)
+- Yellow: #FFC700 (Navigation highlight)
+- Light Blue: #006EF5 (Branding)
+- Blue: #004EAE (Search and Small screen navigation)
+- Dark Blue: #013371 (hover/focus in navigation)
+- Gray: #767676 (Meta info and placeholder text)
+- Dark Gray: #333333 (Content and in-form search icon)
+- White: #FFFFFF (Header links / icons and search input) */
+
+/* - Headings: 36px
+- Navigation: 18px
+- Forms: 16px
+- Content: 14px 
+
+## Spacing
+- Gutters are in increments of 5px although most are set to 20px*/
+
+/*
+ * Globals
+ */
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #555;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #006ef5;
+  font-size: 36px;
+}
+
+.site-name a {
+  color: #ffffff;
+}
+
+/* Nav links */
+.nav-bar {
+  background-color: #004eae;
+}
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+}
+
+.blog-nav-item li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.page_item a {
+  color: #fff;
+  text-decoration: underline;
+}
+.page_item:hover a,
+.page_item :focus a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.current_page_item {
+  background-color: #013371;
+}
+.current_page_item a,
+.current_page_parent a {
+  color: #ffc700;
+}
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.blog-content {
+  display: flex;
+}

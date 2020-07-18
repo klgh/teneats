@@ -23,10 +23,27 @@
 <body>
     <div class="blog-masthead">
         <div class="container">
+            <!--Navbar Mobile-->
+            <nav class="navbar navbar-light light-blue lighten-4">
+                <!-- Collapse button -->
+                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><?php get_template_part('menu'); ?></button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto">
+                        <?php wp_list_pages('&title_li='); ?>
+                    </ul>
+                    <!-- Links -->
+                </div>
+                <!-- Collapsible content -->
+            </nav>
+            <!--/.Navbar-->
             <div class="site-name">
                 <?php get_template_part('logo'); ?>
-                <a href="<?php echo get_bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a>
+                <a class="name-txt" href="<?php echo get_bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a>
             </div>
+
         </div>
     </div>
     <div class="nav-bar">
@@ -36,5 +53,6 @@
             </nav>
         </div>
     </div>
+
 
     <div class="container">

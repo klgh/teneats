@@ -15,27 +15,14 @@
 ## Spacing
 - Gutters are in increments of 5px although most are set to 20px*/
 
-/*
- * Globals
- */
-
 body {
   font-family: "Raleway", sans-serif;
   color: #555;
 }
 
-/*
- * Override Bootstrap's default container.
- */
-
-@media (min-width: 1200px) {
-  .container {
-  }
+a {
+  color: #cc4b00;
 }
-
-/*
- * Masthead for nav
- */
 
 .blog-masthead {
   background-color: #006ef5;
@@ -47,7 +34,6 @@ body {
   font-size: 18px;
 }
 
-/* Nav links */
 .nav-bar {
   background-color: #004eae;
 }
@@ -62,6 +48,32 @@ body {
   display: inline-block;
   padding: 10px;
   padding-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 411px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .site-name {
+    text-align: center;
+    width: 5px;
+  }
+  .name-txt {
+    display: none;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .navbar {
+    padding-left: 1px;
+  }
 }
 
 .page_item a {
@@ -92,6 +104,11 @@ body {
 .blog-row {
   display: flex;
 }
+@media (max-width: 411px) {
+  .blog-row {
+    flex-direction: column;
+  }
+}
 
 .feat-img {
   margin-top: 20px;
@@ -102,11 +119,18 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* .blog-post {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 60px;
-} */
+
+@media (max-width: 411px) {
+  .post-content {
+    width: 85%;
+    margin-left: 25px;
+  }
+  .wp-post-image {
+    width: 328px;
+    height: 200px;
+    margin-left: 20px;
+  }
+}
 .blog-post-title a {
   margin-bottom: 5px;
   font-size: 40px;
@@ -115,7 +139,7 @@ body {
 }
 .blog-post-meta {
   margin-bottom: 20px;
-  color: #999;
+  color: #767676;
   font-size: 14px;
 }
 
@@ -133,9 +157,9 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: #767676;
 }
 
 .blog-post-top {
   text-align: center;
 }
-

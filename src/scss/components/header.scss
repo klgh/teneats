@@ -1,0 +1,51 @@
+.blog-masthead {
+  background-color: #006ef5;
+  line-height: 50px;
+}
+
+.site-name a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.nav-bar {
+  background-color: #004eae;
+}
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+}
+
+.blog-nav-item li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 411px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .site-name {
+    text-align: center;
+    width: 5px;
+  }
+  .name-txt {
+    display: none;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .navbar {
+    padding-left: 1px;
+  }
+}

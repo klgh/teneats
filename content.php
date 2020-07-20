@@ -15,6 +15,16 @@
             </div>
         </div>
     <?php } else { ?>
-        <?php the_excerpt(); ?> <p><a href="<?php the_permalink(); ?>">Read More</a></p>
+        <div class="blog-row">
+            <div class="post-content">
+                <h2 class="blog-post-title">
+                    <?php the_title(); ?>
+                </h2>
+                <p>
+                    <?php the_content(); ?>
+                </p>
+            </div>
+        </div>
+
     <?php } ?>
 </div><!-- /.blog-post -->

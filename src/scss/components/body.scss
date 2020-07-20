@@ -1,20 +1,22 @@
+@import "./variables.scss";
+
 .page_item a {
-  color: #fff;
+  color: $white;
   text-decoration: underline;
   font-size: 16px;
 }
 .page_item:hover a,
 .page_item :focus a {
-  color: #fff;
+  color: $white;
   text-decoration: underline;
 }
 
 .current_page_item {
-  background-color: #013371;
+  background-color: $darkBlue;
 }
 .current_page_item a,
 .current_page_parent a {
-  color: #ffc700;
+  color: $yellow;
 }
 
 .blog-main {
@@ -26,7 +28,7 @@
 .blog-row {
   display: flex;
 }
-@media (max-width: 411px) {
+@include for-size(phone) {
   .blog-row {
     flex-direction: column;
   }
@@ -42,7 +44,7 @@
   flex-direction: column;
 }
 
-@media (max-width: 411px) {
+@include for-size(phone) {
   .post-content {
     width: 85%;
     margin-left: 25px;
@@ -56,12 +58,12 @@
 .blog-post-title a {
   margin-bottom: 5px;
   font-size: 40px;
-  color: #cc4b00;
+  color: $orange;
   text-decoration: underline;
 }
 .blog-post-meta {
   margin-bottom: 20px;
-  color: #767676;
+  color: $gray;
   font-size: 14px;
 }
 
@@ -70,7 +72,7 @@
   margin-bottom: 5px;
 }
 .read-more {
-  color: #cc4b00;
+  color: $orange;
   text-decoration: underline;
   font-size: 14px;
 }
@@ -79,7 +81,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: #767676;
+  color: $gray;
 }
 
 .blog-post-top {

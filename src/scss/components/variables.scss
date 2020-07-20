@@ -1,0 +1,29 @@
+$orange: #cc4b00; // Links
+$yellow: #ffc700; // Navigation highlight
+$lightBlue: #006ef5; // branding
+$blue: #004eae; // Search and Small screen navigation
+$darkBlue: #013371; // hover/focus in navigation
+$gray: #767676; // meta & placeholder
+$darkGray: #333333; //content in-form search
+$white: #ffffff; // Header links / icons and search input
+
+/* - Headings: 36px
+- Navigation: 18px
+- Forms: 16px
+- Content: 14px 
+
+## Spacing
+- Gutters are in increments of 5px although most are set to 20px*/
+
+/* Media Queries */
+@mixin for-size($size) {
+  @if $size == phone {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: 1199px) {
+      @content;
+    }
+  }
+}

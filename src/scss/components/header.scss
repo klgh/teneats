@@ -1,16 +1,15 @@
+@import "./variables.scss";
+
 .blog-masthead {
-  background-color: #006ef5;
+  background-color: $lightBlue;
   line-height: 50px;
 }
 
 .site-name a {
-  color: #ffffff;
+  color: $white;
   font-size: 18px;
 }
 
-.nav-bar {
-  background-color: #004eae;
-}
 .blog-nav-item {
   position: relative;
   display: inline-block;
@@ -24,13 +23,22 @@
   padding-bottom: 15px;
 }
 
-@media (min-width: 1200px) {
+.nav-bar {
+  background-color: $blue;
+}
+@include for-size(desktop) {
   .navbar {
     display: none;
   }
 }
 
-@media (max-width: 411px) {
+@include for-size(phone) {
+  .nav-bar {
+    display: none;
+  }
+  .navbar {
+    padding-left: 1px;
+  }
   .container {
     display: flex;
     flex-direction: row;
@@ -38,14 +46,9 @@
   .site-name {
     text-align: center;
     width: 5px;
+    margin-left: 97px;
   }
   .name-txt {
     display: none;
-  }
-  .nav-bar {
-    display: none;
-  }
-  .navbar {
-    padding-left: 1px;
   }
 }
